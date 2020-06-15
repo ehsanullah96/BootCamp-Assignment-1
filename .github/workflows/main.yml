@@ -33,5 +33,5 @@ jobs:
       run: npm --global surge
     
     - name: Deploying Using Surge
-      run: surge ./ skilllearner_86.surge.sh --token
+      run: surge ./ skilllearner_86.surge.sh --token ${{secrets.WEBSITE_TOKEN}}
         
